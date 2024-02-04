@@ -7,7 +7,7 @@ function celsiusIntoFahrenheit(celsius){
       const fahrenheit = celsius*(9/5)+32;
       return fahrenheit;
 }
-//console.log(celsiusIntoFahrenheit(32));
+console.log(celsiusIntoFahrenheit(32));
 
 
 
@@ -41,20 +41,29 @@ function findNumber(numbers, searchNumber){
             }
       }
       
-      //console.log(count);
+      console.log(count);
 }
 const numbers = [5,6,11,12,98, 5, 23, 22, 11];
 const searchNumber = 11;
 findNumber(numbers, searchNumber);
 
-
-
 /*
 ### Task-3: 
 Write a function to count the number of vowels in a string.
+a e i o u
 */
-
-
+function countVowels(string){
+      const smallString = string.toLowerCase();
+      let count = 0;
+      for (let str of smallString){
+            //console.log(str);
+            if(str == "a" || str == "e" || str == "i" || str == "o" || str == "u"){
+                  count++;
+            }
+      }
+      console.log(count);
+}
+countVowels("this si a program of our life vary important");
 
 /*
 ### Task-4: 
@@ -72,3 +81,5 @@ sample-output: Programming
 ### Task-5: 
 Generate a random number between 10 to 20.
 */
+
+
