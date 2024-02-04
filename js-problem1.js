@@ -96,4 +96,9 @@ findLargestWord(sentences)
 Generate a random number between 10 to 20.
 */
 
-
+function getRandomArbitrary() {
+      const fullNumber = Math.random() * 10 + 10;
+      const result = Math.round(fullNumber);
+      return result;
+}
+console.log(getRandomArbitrary());
