@@ -7,7 +7,7 @@ function celsiusIntoFahrenheit(celsius){
       const fahrenheit = celsius*(9/5)+32;
       return fahrenheit;
 }
-console.log(celsiusIntoFahrenheit(32));
+//console.log(celsiusIntoFahrenheit(32));
 
 
 
@@ -33,7 +33,19 @@ find: 25
 
 output: 0
 */
-
+function findNumber(numbers, searchNumber){
+      let count = 0;
+      for(let num of numbers){
+            if (num == searchNumber){
+                  count++;
+            }
+      }
+      
+      //console.log(count);
+}
+const numbers = [5,6,11,12,98, 5, 23, 22, 11];
+const searchNumber = 11;
+findNumber(numbers, searchNumber);
 
 
 
