@@ -74,7 +74,21 @@ I am learning Programming to become a programmer
 
 sample-output: Programming
 */
-
+function findLargestWord(sentences){
+      const result = sentences.split(" ");
+      let max = 0;
+      let word = "";
+      for ( let str of result){
+            //console.log(str);
+            if(str.length > max){
+                  word = str;
+                  max = str.length
+            }
+      }
+      console.log(word);
+}
+const sentences = "I am learning Programming to become a programmer";
+findLargestWord(sentences)
 
 
 /*
